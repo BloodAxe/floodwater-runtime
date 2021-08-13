@@ -37,5 +37,5 @@ dependencies:
     - segmentation-models-pytorch==0.2.0
     - pytorch-lightning==1.4.1
     - timm==0.4.12
-    - pytorch==1.9.0+cu111
+    - torch==1.9.0+cu111
     - torchvision==0.10.0+cu111

@@ -77,4 +77,4 @@ COPY --chown=appuser:appuser entrypoint.sh /codeexecution/entrypoint.sh
 # RUN nvidia-smi
 COPY ./scripts/check_cuda.py check_cuda.py
 
-CMD "conda run -n condaenv python check_cuda.py"
+ENTRYPOINT "conda run -n condaenv python check_cuda.py"

@@ -1,10 +1,8 @@
 name: condaenv
 channels:
-  - nvidia
   - conda-forge
 dependencies:
   - albumentations=1.0.3
-  - cudnn=8.2
   - geos=3.9.1
   - geotiff=1.6.0
   - h5py=2.10.0

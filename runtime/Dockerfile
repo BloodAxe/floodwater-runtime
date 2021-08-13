@@ -76,5 +76,5 @@ COPY --chown=appuser:appuser entrypoint.sh /codeexecution/entrypoint.sh
 # Ensure CUDA is available
 # RUN nvidia-smi
 COPY ./scripts/check_cuda.py check_cuda.py
-
+RUN conda run -n condaenv pip freeze
 CMD conda run -n condaenv python check_cuda.py
